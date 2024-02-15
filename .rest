@@ -1,0 +1,21 @@
+POST http://localhost:3001/api/v1/register
+Content-Type: application/json
+
+{
+    "username": "user12",
+    "password": "98475983475"
+}
+
+###
+POST http://localhost:3001/api/v1/login
+Content-Type: application/json
+
+{
+    "username": "user12",
+    "password": "98475983475"
+}
+
+###
+GET http://localhost:3001/api/v1/protected
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.dXNlcjEy.5Ug5wkMpEYPMI7M2fnJx1BfR3Q1FEP1lfmGOkZjTH8U
+
